@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+#clock{
+    width: 100%;
+    height: 60vh;
+    /* background-color: rgb(29, 29, 29); */
+    /* color: rgb(255, 255, 255);    */
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#parts{
+    width: 90%;
+    height: 25vh;   
+    /* background-color: rgb(103, 236, 91); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13vh;
+}
+.img{
+    width: 20%;
+    height: 25vh;   
+}
+#bar{
+    width: 40%;
+    height: 25vh;   
+    /* background-color: rgb(236, 91, 91); */
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#alarm{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgb(107, 54, 54);  */
+}
+#alarm>div{
+    width: 20%;
+    font-size: 5vh;
+
+}
+#input{
+    width: 30%;
+    height: 8vh;
+    font-size: 3.5vw;
+    border-style: none;
+    background-color: transparent;
+
+}
+#set{
+    width: 10%;
+    height: 15vh;
+    font-size: 2.5vh;
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    font-weight: bolder;
+}
+ #set:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+</style>
+
+<body>
+    
+<div id="clock">
+<div id="parts">
+    <div class="img"></div>
+    <div id="bar"></div>
+    <div class="img"></div>
+</div>
+<div id="alarm">
+    <div>Select Time  :</div>
+    <input id="input" type="time" placeholder="Enter the String">
+    <button type="submit" id="set">Click to set Alarm</button>
+</div>
+<div id="result">
+
+</div>
+
+
+</div>
+
+<script src="My_Alarm.js"></script>
+</body>
+</html>

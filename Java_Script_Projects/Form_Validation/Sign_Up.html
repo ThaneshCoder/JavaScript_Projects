@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#signup{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+ }
+ #table{
+    background-color: rgb(240, 239, 239);
+ }
+#table td{
+        width: 24vw;
+    }
+#sign{
+    text-align: center;
+    font-size: 30px; 
+}
+.content{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: 4px solid rgb(5, 5, 5);  
+}
+.result{
+    font-size: 20px;
+}
+.button{
+    width: 49%;
+    height: 7vh;
+    font-size: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .result{
+    font-size: 3vw;
+}
+.content{
+    font-size: 3vw;
+}
+.button{
+    width: 49%;
+    height: 7vh;
+    font-size: 3vw;
+}
+}
+</style>
+<body>
+    
+    <div id="signup">
+        <form action="" autocomplete="off" >
+            <table cellpadding="10px" cellspacing="10px" id="table"  >
+                <tr>
+                    <td >
+                        <div id="sign" >Sign Up </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="first" class="content" type="text" placeholder="First Name" name="">
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input id="last" class="content" type="text" placeholder="Last Name" name="">
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <input type="number" class="content" id="mob" placeholder="Mobile no">
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <input type="email" class="content" id="email" placeholder="E mail">
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="last" class="content" type="password" placeholder="Enter Password" >
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="last" class="content" type="password" placeholder="Re Enter Password" >
+                    </td>
+                    <td>
+                        <div class="result"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset" class="button"> Reset</button>
+                        <button type="submit" class="button">Submit</button>
+                    </td>
+                </tr>
+            </table>
+            </Form>
+        </div>
+
+        <script src="Sign_up.js"></script>
+</body>
+</html>

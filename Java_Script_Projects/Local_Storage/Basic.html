@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #storage{
+        width: 30%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+    .data{
+        display: flex;
+        /* border: 1px solid rgb(255, 107, 107); */
+        justify-content: space-evenly;
+    }
+    #button{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+</style>
+<body>
+    <div id="storage">
+        <div class="data">
+            <div>Keys</div>
+            <input type="text">
+        </div>
+        <div class="data">
+            <div>Values</div>
+            <input type="text">
+        </div>
+
+        <div id="button">
+            <button>Set</button>
+            <button>Get</button>
+            <button>Remove</button>
+            <button>Clear</button>
+        </div>
+        <!-- <div>
+            <input type="button" value="">
+        </div> -->
+    </div>
+
+    <script src="Basic1.js"></script>
+</body>
+</html>
